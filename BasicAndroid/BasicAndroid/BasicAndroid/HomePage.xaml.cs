@@ -16,5 +16,12 @@ namespace BasicAndroid
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void button_onClicked(object sender, EventArgs e)
+        {
+            var text = MainEntry.Text;
+            MainLabel.Text = "Hallo " + text + " Ganteng :)" ;
+        }
+
+    }
 }
