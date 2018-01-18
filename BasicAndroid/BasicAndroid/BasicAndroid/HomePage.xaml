@@ -2,14 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BasicAndroid.HomePage">
-    <StackLayout>
-        <Entry x:Name="MainEntry"
-               Placeholder="Type Here"/>
-        
+    <StackLayout BackgroundColor="Gray"
+                 Padding="60"
+                 VerticalOptions="Center">
+        <Grid Padding="0,0,0,50">
+            <Entry x:Name="MainEntry"
+               Placeholder="Type Here"
+               BackgroundColor="Magenta"/>
+        </Grid>
+
         <Button Clicked="button_onClicked"
-                Text="Click Me!"/>
+                Text="Click Me!"
+                BackgroundColor="Yellow"
+                TextColor="Green"/>
         
-        <Label x:Name="MainLabel"/>
+        <Label x:Name="MainLabel"
+               TextColor="Red"
+               FontSize="40"/>
+        
     </StackLayout>
     
 </ContentPage>
