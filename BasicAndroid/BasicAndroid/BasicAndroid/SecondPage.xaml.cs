@@ -12,9 +12,10 @@ namespace BasicAndroid
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SecondPage : ContentPage
 	{
-		public SecondPage ()
+		public SecondPage (string parameter)
 		{
 			InitializeComponent ();
+            MainLabel.Text = parameter;
 		}
 	}
 }

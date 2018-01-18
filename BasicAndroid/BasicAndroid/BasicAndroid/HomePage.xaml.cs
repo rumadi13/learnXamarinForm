@@ -21,11 +21,14 @@ namespace BasicAndroid
         {
             var text = MainEntry.Text;
             MainLabel.Text = "Hallo " + text + " Ganteng :)" ;
+            if (text == null) {
+                MainLabel.Text = "";
+            }
         }
 
         private async void navigation_ButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SecondPage());
+            await Navigation.PushAsync(new SecondPage(MainLabel.Text));
         }
 
     }
