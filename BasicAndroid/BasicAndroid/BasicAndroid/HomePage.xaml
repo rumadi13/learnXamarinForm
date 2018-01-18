@@ -5,9 +5,10 @@
     <StackLayout BackgroundColor="Gray"
                  Padding="60"
                  VerticalOptions="Center">
+        
         <Grid Padding="0,0,0,50">
             <Entry x:Name="MainEntry"
-               Placeholder="Type Here"
+               Placeholder="Type Name Here"
                BackgroundColor="Magenta"/>
         </Grid>
 
@@ -19,7 +20,11 @@
         <Label x:Name="MainLabel"
                TextColor="Red"
                FontSize="40"/>
-        
+
+        <Button Text="Navigation to 2nd Page"
+                Clicked="navigation_ButtonClicked"
+                BackgroundColor="Blue"/>
+
     </StackLayout>
     
 </ContentPage>

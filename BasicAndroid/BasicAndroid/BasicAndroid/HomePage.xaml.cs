@@ -23,5 +23,10 @@ namespace BasicAndroid
             MainLabel.Text = "Hallo " + text + " Ganteng :)" ;
         }
 
+        private async void navigation_ButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SecondPage());
+        }
+
     }
 }
