@@ -13,7 +13,14 @@ namespace BasicAndroid
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new HomePage());
+            MainPage = new TabbedPage
+            {
+                Children =
+                {
+                    new HomePage(),
+                    new SecondPage("Hello Guys!")
+                }
+            };
 		}
 
 		//protected override void OnStart ()
