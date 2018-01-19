@@ -13,7 +13,7 @@ namespace BasicAndroid
 		{
 			InitializeComponent();
 
-            MainPage = new TabbedPage
+            MainPage = new CarouselPage
             {
                 Children =
                 {
