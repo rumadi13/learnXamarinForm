@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UIproperty.pageUI">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White"
+                     Padding="60"
+                     VerticalOptions="Center">
+
+            <Grid Padding="0,0,0,50">
+
+                <Entry  x:Name="MainEntry" 
+                    Placeholder="Type Name Here"
+                    BackgroundColor="Gray"/>
+            </Grid>
+
+            <Button Clicked="button_LabelonClicked"
+                    BackgroundColor="LightGreen"
+                    Text="Click Me !"/>
+
+            <Label x:Name="MainLabel"
+                   FontAttributes="Italic"
+                   TextColor="Gray"
+                   FontSize="Large"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
