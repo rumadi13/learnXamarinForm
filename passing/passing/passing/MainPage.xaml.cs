@@ -13,5 +13,17 @@ namespace passing
 		{
 			InitializeComponent();
 		}
-	}
+
+        public void button_onClicked(object sender, EventArgs e  )
+        {
+            var text = MainEntry.Text;
+            mainLabel.Text = text + " Ganteng";
+            //await Navigation.PushAsync(new Page1(MainEntry.Text));
+        }
+
+        public async void passing_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page1(MainEntry.Text));
+        }
+    }
 }
