@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:naviGation"
-             x:Class="naviGation.MainPage">
+             x:Class="naviGation.MainPage"
+             Title="Home Page">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+    <StackLayout>
+        <Label Text="Welcome to Xamarin Form !" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" 
+               FontSize="Large"
+               TextColor="Violet"/>
+        <Button Clicked="navigation_clickedbutton"
+                Text="navigation page"
+                BackgroundColor="Aqua"/>
+    </StackLayout>
+	
 
 </ContentPage>

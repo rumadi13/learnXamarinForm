@@ -13,5 +13,10 @@ namespace naviGation
 		{
 			InitializeComponent();
 		}
-	}
+
+        public async void navigation_clickedbutton(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new secondPage());
+        }
+    }
 }
