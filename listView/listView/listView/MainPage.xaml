@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:listView"
+             x:Class="listView.MainPage">
+
+    <StackLayout>
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="0,0,0,8">
+                                <Label Grid.Row="1" Text="{Binding name}" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Margin="8,4,0,0"  />
+                                <Label  Grid.Row="2" Text="{Binding age}" Margin="8,0,0,16" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="Black" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
