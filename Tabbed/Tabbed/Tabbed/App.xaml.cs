@@ -9,26 +9,31 @@ namespace Tabbed
 {
 	public partial class App : Application
 	{
-		public App ()
-		{
-			InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new Tabbed.MainPage();
-		}
+            MainPage = new TabbedPage
+            {
+                Children = { new MainPage(),
+                                new Tabbedpage()  }
+            };
 
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
+        }
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
+		//protected override void OnStart ()
+		//{
+		//	// Handle when your app starts
+		//}
 
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
+		//protected override void OnSleep ()
+		//{
+		//	// Handle when your app sleeps
+		//}
+
+		//protected override void OnResume ()
+		//{
+		//	// Handle when your app resumes
+		//}
 	}
 }
