@@ -13,7 +13,7 @@ namespace Tabbed
         {
             InitializeComponent();
 
-            MainPage = new TabbedPage
+            MainPage = new CarouselPage // change tabbedPage to Corousel Page
             {
                 Children = { new MainPage(),
                                 new Tabbedpage()  }
